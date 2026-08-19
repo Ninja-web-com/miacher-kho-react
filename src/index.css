@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest: #24382B;
+  --color-mountain: #3E5C45;
+  --color-sand: #C9A66B;
+  --color-snow: #F7F5F0;
+  --color-stone: #6A6A64;
+  --color-charcoal: #20221F;
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-snow);
+  color: var(--color-charcoal);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(32,34,31,0.3) 0%, rgba(32,34,31,0.55) 50%, rgba(32,34,31,0.8) 100%);
+}
+
+.sticky-bar {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.nav-transition {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
